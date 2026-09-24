@@ -69,7 +69,7 @@ graph TD
 ## Key results
 
 - Workers can file expenses in minutes instead of days.
-- Receipt extraction reaches around 90 percent accuracy for common layouts.
+- Receipt extraction reaches high accuracy for common layouts.
 - Finance reviewers spend far less time on data entry because the bot pre-fills most fields.
 - The system supports text, voice, and photos, so it works in low-bandwidth field conditions.
 - A global error handler guarantees the bot always replies, even when something fails.
@@ -95,7 +95,7 @@ graph TD
 - Internal business rules for approval limits and per-diem calculations
 - Real receipt images or employee data
 - Production deployment configuration
-- The AppSheet back-office configuration used by finance admins
+- The low-code admin back-office configuration used by finance admins
 
 ---
 
