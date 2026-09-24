@@ -1,0 +1,11 @@
+graph TD
+    Worker[Field Worker] -->|Photo / voice / text| Telegram[Telegram Chat]
+    Telegram -->|Webhook| API[Backend API on Cloud Run]
+    API -->|Extract receipt fields| VLM[Vision-Language Model]
+    API -->|Keep session state| Sessions[(Session Store)]
+    API -->|Save images| ObjectStorage[Object Storage]
+    API -->|Write records| Sheets[Review Spreadsheet]
+    API -->|Log structured events| Logging[Logging]
+    Reviewer[Finance Reviewer] -->|Web| Dashboard[Review Dashboard]
+    Dashboard -->|Read + update| API
+    Scheduler[Daily Scheduler] -->|Reminders + reports| API
